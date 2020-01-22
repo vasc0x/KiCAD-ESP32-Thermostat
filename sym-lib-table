@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ESP32-DEVKITC-32D)(type Legacy)(uri /home/adan/Dropbox/CLOUD/2_EnR/KiCAD/Libraries/ESP32-DEVKITC-32D/ESP32-DEVKITC-32D.lib)(options "")(descr ""))
+  (lib (name G3MB202PDC12)(type Legacy)(uri /home/adan/Dropbox/CLOUD/2_EnR/KiCAD/Libraries/Relay_G3MB202/G3MB202PDC12.lib)(options "")(descr ""))
+  (lib (name custom_library)(type Legacy)(uri /home/adan/Dropbox/CLOUD/2_EnR/KiCAD/Libraries/custom_library.lib)(options "")(descr ""))
+)

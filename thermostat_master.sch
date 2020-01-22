@@ -1,0 +1,331 @@
+EESchema Schematic File Version 4
+LIBS:thermostat_master-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 5E21029B
+P 4200 3300
+F 0 "#PWR0101" H 4200 3150 50  0001 C CNN
+F 1 "+5V" V 4215 3428 50  0000 L CNN
+F 2 "" H 4200 3300 50  0001 C CNN
+F 3 "" H 4200 3300 50  0001 C CNN
+	1    4200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E21056E
+P 4200 2800
+F 0 "#PWR0102" H 4200 2550 50  0001 C CNN
+F 1 "GND" V 4205 2672 50  0000 R CNN
+F 2 "" H 4200 2800 50  0001 C CNN
+F 3 "" H 4200 2800 50  0001 C CNN
+	1    4200 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L custom_library:esp32_38_pins U1
+U 1 1 5E214C6A
+P 4400 1700
+F 0 "U1" H 4750 2165 50  0000 C CNN
+F 1 "esp32_38_pins" H 4750 2074 50  0000 C CNN
+F 2 "My_Libraries:ESP32_Keeyes_38_Pins" H 4400 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E2196F9
+P 5300 2100
+F 0 "#PWR0103" H 5300 1850 50  0001 C CNN
+F 1 "GND" V 5305 1972 50  0000 R CNN
+F 2 "" H 5300 2100 50  0001 C CNN
+F 3 "" H 5300 2100 50  0001 C CNN
+	1    5300 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E219DA7
+P 5300 1500
+F 0 "#PWR0104" H 5300 1250 50  0001 C CNN
+F 1 "GND" V 5305 1372 50  0000 R CNN
+F 2 "" H 5300 1500 50  0001 C CNN
+F 3 "" H 5300 1500 50  0001 C CNN
+	1    5300 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x14 J1
+U 1 1 5E23252C
+P 2800 2100
+F 0 "J1" H 2718 2917 50  0000 C CNN
+F 1 "Conn_01x14" H 2718 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 2800 2100 50  0001 C CNN
+F 3 "~" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E2331BD
+P 7600 1875
+F 0 "J2" H 7680 1867 50  0000 L CNN
+F 1 "Conn_01x04" H 7680 1776 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7600 1875 50  0001 C CNN
+F 3 "~" H 7600 1875 50  0001 C CNN
+	1    7600 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1500 3900 1500
+Wire Wire Line
+	3900 1500 3900 2300
+Wire Wire Line
+	3900 2300 4200 2300
+Wire Wire Line
+	3000 1600 3950 1600
+Wire Wire Line
+	3950 1600 3950 2000
+Wire Wire Line
+	3950 2000 4200 2000
+Wire Wire Line
+	3000 1700 4000 1700
+Wire Wire Line
+	4000 1700 4000 2100
+Wire Wire Line
+	4000 2100 4200 2100
+Wire Wire Line
+	3000 1800 4050 1800
+Wire Wire Line
+	4050 1800 4050 2200
+Wire Wire Line
+	4050 2200 4200 2200
+Wire Wire Line
+	4100 1900 4100 2400
+Wire Wire Line
+	4100 2400 4200 2400
+Wire Wire Line
+	3000 1900 4100 1900
+Wire Wire Line
+	3000 2100 3100 2100
+Wire Wire Line
+	3100 2100 3100 1100
+Wire Wire Line
+	3100 1100 5700 1100
+Wire Wire Line
+	5700 1600 5300 1600
+Wire Wire Line
+	3000 2200 3850 2200
+Wire Wire Line
+	3850 2200 3850 2600
+Wire Wire Line
+	3850 2600 4200 2600
+Wire Wire Line
+	3000 2300 3800 2300
+Wire Wire Line
+	3800 2300 3800 2900
+Wire Wire Line
+	3800 2900 4200 2900
+Wire Wire Line
+	5700 1100 5700 1600
+Wire Wire Line
+	3000 2400 3150 2400
+Wire Wire Line
+	3150 2400 3150 1050
+Wire Wire Line
+	3150 1050 5750 1050
+Wire Wire Line
+	5750 1050 5750 2200
+Wire Wire Line
+	5750 2200 5300 2200
+Wire Wire Line
+	3000 2500 3200 2500
+Wire Wire Line
+	3200 2500 3200 1000
+Wire Wire Line
+	3200 1000 5800 1000
+Wire Wire Line
+	5800 1000 5800 2300
+Wire Wire Line
+	5800 2300 5300 2300
+Wire Wire Line
+	3000 2600 3250 2600
+Wire Wire Line
+	3250 2600 3250 950 
+Wire Wire Line
+	3250 950  5850 950 
+Wire Wire Line
+	5850 950  5850 2400
+Wire Wire Line
+	5850 2400 5300 2400
+$Comp
+L power:GND #PWR0105
+U 1 1 5E23D6E5
+P 3000 2700
+F 0 "#PWR0105" H 3000 2450 50  0001 C CNN
+F 1 "GND" V 3005 2572 50  0000 R CNN
+F 2 "" H 3000 2700 50  0001 C CNN
+F 3 "" H 3000 2700 50  0001 C CNN
+	1    3000 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5E23DB77
+P 3000 2800
+F 0 "#PWR0106" H 3000 2650 50  0001 C CNN
+F 1 "+5V" V 3015 2928 50  0000 L CNN
+F 2 "" H 3000 2800 50  0001 C CNN
+F 3 "" H 3000 2800 50  0001 C CNN
+	1    3000 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5E241456
+P 6650 1600
+F 0 "J3" H 6730 1592 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 1501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6650 1600 50  0001 C CNN
+F 3 "~" H 6650 1600 50  0001 C CNN
+	1    6650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1700 5300 1700
+Wire Wire Line
+	6450 1800 6350 1800
+Wire Wire Line
+	6350 1800 6350 2000
+Wire Wire Line
+	6350 2000 5300 2000
+$Comp
+L power:+5V #PWR0107
+U 1 1 5E24F528
+P 6450 1500
+F 0 "#PWR0107" H 6450 1350 50  0001 C CNN
+F 1 "+5V" V 6465 1628 50  0000 L CNN
+F 2 "" H 6450 1500 50  0001 C CNN
+F 3 "" H 6450 1500 50  0001 C CNN
+	1    6450 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E24FBD8
+P 6450 1600
+F 0 "#PWR0108" H 6450 1350 50  0001 C CNN
+F 1 "GND" V 6455 1472 50  0000 R CNN
+F 2 "" H 6450 1600 50  0001 C CNN
+F 3 "" H 6450 1600 50  0001 C CNN
+	1    6450 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5E250239
+P 7050 2225
+F 0 "J4" H 7130 2217 50  0000 L CNN
+F 1 "Conn_01x02" H 7130 2126 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7050 2225 50  0001 C CNN
+F 3 "~" H 7050 2225 50  0001 C CNN
+	1    7050 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E250A56
+P 6850 2325
+F 0 "#PWR0109" H 6850 2075 50  0001 C CNN
+F 1 "GND" V 6855 2197 50  0000 R CNN
+F 2 "" H 6850 2325 50  0001 C CNN
+F 3 "" H 6850 2325 50  0001 C CNN
+	1    6850 2325
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 5E250FC9
+P 6850 2225
+F 0 "#PWR0110" H 6850 2075 50  0001 C CNN
+F 1 "+5V" V 6865 2353 50  0000 L CNN
+F 2 "" H 6850 2225 50  0001 C CNN
+F 3 "" H 6850 2225 50  0001 C CNN
+	1    6850 2225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5E23CFCC
+P 5600 3725
+F 0 "#PWR0111" H 5600 3475 50  0001 C CNN
+F 1 "GND" V 5605 3597 50  0000 R CNN
+F 2 "" H 5600 3725 50  0001 C CNN
+F 3 "" H 5600 3725 50  0001 C CNN
+	1    5600 3725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 3725 5600 4000
+$Comp
+L G3MB202PDC12:G3MB202PDC12 K1
+U 1 1 5E238229
+P 6100 4325
+F 0 "K1" H 6678 4442 50  0000 L CNN
+F 1 "G3MB202PDC12" H 6678 4351 50  0000 L CNN
+F 2 "G3MB202PDC12:RELAY_G3MB202PDC12" H 5750 4024 50  0001 L BNN
+F 3 "Manufacturer Recommendation" H 6100 4325 50  0001 L BNN
+F 4 "Omron" H 6100 4325 50  0001 L BNN "Field4"
+F 5 "N/A" H 6100 4325 50  0001 L BNN "Field5"
+	1    6100 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3300 5300 3300
+Wire Wire Line
+	5750 3300 5750 4000
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5E283E92
+P 6350 3500
+F 0 "J5" V 6314 3312 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 6223 3312 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6350 3500 50  0001 C CNN
+F 3 "~" H 6350 3500 50  0001 C CNN
+	1    6350 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 4000 6250 3850
+Wire Wire Line
+	6250 3850 6350 3850
+Wire Wire Line
+	6350 3850 6350 3700
+Wire Wire Line
+	6550 4000 6550 3850
+Wire Wire Line
+	6550 3850 6450 3850
+Wire Wire Line
+	6450 3850 6450 3700
+Text Notes 7314 7510 0    79   ~ 0
+ESP32 thermostat - master bedroom
+Text Notes 8095 7649 0    79   ~ 0
+2020-01-19
+Text Notes 10552 7652 0    79   ~ 0
+2
+$EndSCHEMATC
